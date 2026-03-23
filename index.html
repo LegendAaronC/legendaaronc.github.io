@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Guns Page</title>
+<style>
+  /* Full-page background */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://images.unsplash.com/photo-1601597111320-1de9eb0a3ffb?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* Overlay for better contrast */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+  }
+
+  h1 {
+    margin-top: 40px;
+    font-size: 3em;
+    text-shadow: 2px 2px 6px #000;
+  }
+
+  p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 4px #000;
+  }
+
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 20px 50px 20px;
+  }
+
+  .custom-button {
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 180px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .custom-button:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
+  }
+
+  .custom-button img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .custom-button span {
+    display: block;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 1px 1px 4px #000;
+  }
+</style>
+</head>
+<body>
+
+<h1>Aaron</h1>
+<p>This is my website for every project im working on. If you wanna check out anything here, just click the button of it.</p>
+
+<div class="button-container">
+  <button class="custom-button" onclick="window.location.href='https://legendaaronc.github.io/karma'">
+    <span>Karma (Blooket Menu)</span>
+  </button>
+
+  <button class="custom-button" onclick="window.location.href='https://legendaaronc.github.io/DashHack'">
+    <img src="https://raw.githubusercontent.com/LegendAaronC/DashHack/refs/heads/main/DashHack.png" alt="DashHack">
+    <span>DashHack (Dashmetry Menu)</span>
+  </button>
+
+  <button class="custom-button" onclick="window.location.href='https://hacksforgd.pages.dev'">
+    <span>Geode Mod (Geometry Dash)</span>
+  </button>
+</div>
+
+</body>
+</html>
